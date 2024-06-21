@@ -1,0 +1,232 @@
+@font-face {
+    font-weight: 600;
+    font-family: "Inter";
+    src: url("./fonts/Inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Inter";
+    src: url("./fonts/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Inter";
+    src: url("./fonts/Inter/Inter-Regular.ttf");
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    position: relative;
+
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 112px;
+}
+
+header {
+    height: 80px;
+    margin-bottom: 72px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    width: 442px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu {
+    width: 282px;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #111827;
+}
+
+.menu li {
+    padding: 4px 8px;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.badges {
+    width: 282px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge {
+    width: 135px;
+    height: 40px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background: #000000;
+}
+
+.hero {
+    height: 640px;
+    margin-bottom: 74px;
+
+    display: flex;
+}
+
+.content {
+    width: 696px;
+    box-sizing: border-box;
+    padding-top: 96px;
+    padding-right: 48px;
+    margin-right: 32px; 
+}
+
+.hero h1 {
+    margin: 0;
+    margin-bottom: 16px;
+
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.hero p {
+    margin: 0;
+    margin-bottom: 32px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.buttons {
+    width: 333px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    height: 56px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.button-1 {
+    width: 138px;
+
+    border-radius: 8px;
+
+    background: #7C3AED;
+    color: #FFFFFF;
+}
+
+.button-2 {
+    width: 179px;
+
+    color: #7C3AED;
+}
+
+.watch {
+    margin-right: 8px;
+}
+
+.img-mobile {
+    width: 488px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.left-band-1 {
+    top: 635px;
+    left: 0;
+}
+
+.left-band-2 {
+    top: 718px;
+    left: 0;
+}
+
+.right-band-1 {
+    top: 448px;
+    left: 988px;
+    z-index: -1;
+}
+
+.right-band-2 {
+    top: 508px;
+    left: 828px;
+    z-index: -1;
+}
+
+.right-band-3 {
+    top: 540px;
+    left: 1260px;
+}
+
+.logotypes {
+    height: 142px;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+
+.wrapper {
+    width: 1216px;
+    height: 110px;
+    margin: 0 auto;
+
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper img {
+    margin-right: 64px;
+}
+
+.wrapper img:last-child {
+    margin: 0;
+}
