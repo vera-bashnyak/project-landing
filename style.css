@@ -17,14 +17,18 @@
 }
 
 body {
+    margin: 0;
+
     background-color: #FFFFFF;
+    background-image: url('./images/BG.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
     font-family: "Inter", sans-serif;
     font-size: 18px;
+    color: #111827;
 }
 
 .container {
-    position: relative;
-
     width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -46,7 +50,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .menu {
@@ -113,7 +116,6 @@ header {
     margin-bottom: 16px;
 
     font-size: 60px;
-    font-weight: 700;
     line-height: 72px;
 }
 
@@ -122,7 +124,6 @@ header {
     margin-bottom: 32px;
 
     font-size: 18px;
-    font-weight: 400;
     line-height: 28px;
 }
 
@@ -173,35 +174,58 @@ header {
     justify-content: center;
 }
 
+.relative {
+    position: relative;
+}
+
 .absolute {
     position: absolute;
 }
 
 .left-band-1 {
-    top: 635px;
+    top: 483px;
     left: 0;
 }
 
 .left-band-2 {
-    top: 718px;
+    top: 566px;
     left: 0;
 }
 
 .right-band-1 {
-    top: 448px;
+    top: 296px;
     left: 988px;
     z-index: -1;
 }
 
 .right-band-2 {
-    top: 508px;
+    top: 356px;
     left: 828px;
     z-index: -1;
 }
 
 .right-band-3 {
-    top: 540px;
+    top: 389px;
     left: 1260px;
+}
+
+.circle {
+    z-index: -1;
+    opacity: 60%;
+}
+
+.purple-circle {
+    top: -189px;
+    left: 1087px;
+
+    filter: blur(150px);
+}
+
+.turquoise-circle {
+    top: 312px;
+    left: 829px;
+
+    filter: blur(70px);
 }
 
 .logotypes {
@@ -230,3 +254,173 @@ header {
 .wrapper img:last-child {
     margin: 0;
 }
+
+.features {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.features-heading {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    width: 800px;
+    height: 124px;
+}
+
+.features h2 {
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.features p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.rows {
+    height: 368px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 64px;
+}
+
+.feature-item {
+    width: 384px;
+    height: 152px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-item h3{
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.feature-item p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.testimonial {
+    margin: 0 auto;
+    width: 1440px;
+    height: 892px;
+
+    background: #D5FAFC;
+}
+
+.testimonial > img {
+    position: absolute;
+    top: 64px;
+    left: 112px;
+
+    opacity: 30%;
+}
+
+.heading {
+    top: 120px;
+    left: 216px;
+
+    width: 488px;
+    height: 156px;
+}
+
+.heading h2 {
+    margin: 0;
+
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -2.5px;
+}
+
+.heading p {
+    margin: 0;
+    line-height: 28px;
+}
+
+.testimonial-item {
+    position: absolute;
+
+    padding: 32px;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px -2px #1118270F,
+                0px 4px 8px -2px #1118271A;  
+}
+
+.testimonial-item > img {
+    margin-bottom: 32px;
+}
+
+.testimonial-content {
+    width: 100%;
+
+    line-height: 28px;
+
+    display: flex;
+}
+
+.testimonial-content > img {
+    margin-right: 16px;
+}
+
+.testimonial-content p {
+    margin: 0;
+}
+
+.testimonial-content .name {
+    font-weight: 700;
+}
+
+.testimonial-content .position {
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.testimonial-content .quote {
+    margin-bottom: 24px;
+}
+
+.testimonial-item1 {
+     top: 340px;
+     left: 320px;
+ 
+     width: 384px;
+     height: 396px;
+ }
+
+ .testimonial-item2 {
+    top: 196px;
+    left: 736px;
+
+    width: 488px;
+    height: 312px;
+ }
+
+ .testimonial-item3 {
+    top: 540px;
+    left: 736px;
+
+    width: 384px;
+    height: 256px;
+ }
