@@ -27,6 +27,10 @@ body {
     font-size: 18px;
     color: #111827;
 }
+ 
+p {
+    margin: 0;
+}
 
 .container {
     width: 1440px;
@@ -120,7 +124,6 @@ header {
 }
 
 .hero p {
-    margin: 0;
     margin-bottom: 32px;
 
     font-size: 18px;
@@ -277,8 +280,6 @@ header {
 }
 
 .features p {
-    margin: 0;
-
     font-size: 18px;
     line-height: 28px;
     text-align: center;
@@ -333,7 +334,7 @@ header {
     opacity: 30%;
 }
 
-.heading {
+.testimonial-heading {
     top: 120px;
     left: 216px;
 
@@ -350,7 +351,6 @@ header {
 }
 
 .heading p {
-    margin: 0;
     line-height: 28px;
 }
 
@@ -381,10 +381,6 @@ header {
 
 .testimonial-content > img {
     margin-right: 16px;
-}
-
-.testimonial-content p {
-    margin: 0;
 }
 
 .testimonial-content .name {
@@ -424,3 +420,120 @@ header {
     width: 384px;
     height: 256px;
  }
+
+ .metrics {
+    height: 338px;
+    padding: 80px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .metrics-heading {
+    width: 592px;
+    height: 156px;
+ }
+
+ .metrics-heading h2 {
+    margin-bottom: 8px;
+ }
+
+ .metrics-content {
+    width: 592px;
+    height: 178px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 64px;
+ }
+
+ .achievements-item {
+    width: 280px;
+    height: 69px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .achievements-item img {
+    padding: 8px;
+ }
+
+ .achievements-item div {
+    width: 216px;
+ }
+
+ .achievements-item .number {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -2.5px;
+ }
+
+ .achievements-item .label {
+    font-size: 18px;
+    line-height: 24px;
+ }
+
+ .logo-clouds {
+    height: 431px;
+    padding: 80px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #F3F4F6;
+ }
+
+ .logo-heading {
+    width: 488px;
+    height: 264px;
+    padding: 40px 0;
+    box-sizing: border-box;
+ }
+
+ .logo-heading h2 {
+    margin-bottom: 8px;
+ }
+
+ .logo-heading p {
+    font-size: 18px;
+    line-height: 28px;
+ }
+
+ .logos {
+    width: 696px;
+    height: 100%;
+ }
+
+ .logos > img {
+    left: 78px;
+ }
+
+ .inner-logos {
+    width: 448px;
+    height: 192px;
+
+    top: 40px;
+    left: 124px;
+ }
+
+ .inner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 64px;
+ }
+
+ .inner-logos img {
+    margin-right: 64px;
+ }
+
+ .inner-logos img:nth-child(4) {
+    margin-right: 0;
+ }
+ 
