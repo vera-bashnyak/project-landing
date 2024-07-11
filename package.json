@@ -2,13 +2,31 @@
   "devDependencies": {
     "@eslint/create-config": "^1.0.0",
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.5.0",
+    "@eslint/js": "^9.6.0",
+    "@html-eslint/eslint-plugin": "^0.25.0",
+    "@html-eslint/parser": "^0.25.0",
+    "@types/eslint": "^8.56.10",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "globals": "^15.6.0"
-  }
+    "globals": "^15.8.0",
+    "prettier": "^3.3.2"
+  },
+  "name": "project-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

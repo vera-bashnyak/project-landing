@@ -16,6 +16,12 @@
     src: url("./fonts/Inter/Inter-Regular.ttf");
 }
 
+@font-face {
+    font-weight: 500;
+    font-family: "Inter";
+    src: url("./fonts/Inter/Inter-Medium.ttf");
+}
+
 body {
     margin: 0;
 
@@ -123,11 +129,12 @@ header {
     line-height: 72px;
 }
 
+.description {
+    line-height: 28px;
+}
+
 .hero p {
     margin-bottom: 32px;
-
-    font-size: 18px;
-    line-height: 28px;
 }
 
 .buttons {
@@ -280,8 +287,6 @@ header {
 }
 
 .features p {
-    font-size: 18px;
-    line-height: 28px;
     text-align: center;
 }
 
@@ -304,7 +309,7 @@ header {
     align-items: center;
 }
 
-.feature-item h3{
+.feature-item h3 {
     margin: 0;
     margin-bottom: 8px;
 
@@ -348,10 +353,6 @@ header {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: -2.5px;
-}
-
-.heading p {
-    line-height: 28px;
 }
 
 .testimonial-item {
@@ -500,11 +501,6 @@ header {
     margin-bottom: 8px;
  }
 
- .logo-heading p {
-    font-size: 18px;
-    line-height: 28px;
- }
-
  .logos {
     width: 696px;
     height: 100%;
@@ -537,3 +533,31 @@ header {
     margin-right: 0;
  }
  
+ .cta {
+    margin: 0 auto;
+    width: 1440px;
+    height: 558px;
+
+    background: #1DB5BE;
+ }
+
+ .cta-heading {
+    width: 592px;
+    height: 336px;
+    margin: 111px 0;
+ }
+
+ .cta-heading h2 {
+    margin-bottom: 8px;
+ }
+
+ .cta-heading .description {
+    margin-bottom: 48px;
+ }
+
+ .cta-heading p:nth-of-type(2) {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    line-height: 28px;
+ }
