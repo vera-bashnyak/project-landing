@@ -15,7 +15,9 @@
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.8.0",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.1"
   },
   "name": "project-landing",
   "version": "1.0.0",
@@ -23,7 +25,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:css": "stylelint '**/*.css'"   
   },
   "keywords": [],
   "author": "",
