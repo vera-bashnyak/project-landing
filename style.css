@@ -73,16 +73,17 @@ header {
 }
 
 .menu a {
-    font-weight: 600;
     text-decoration: none;
-    color: #111827;
 }
 
 .menu li {
     padding: 4px 8px;
 
     font-size: 14px;
+    font-weight: 600;
     line-height: 20px;
+
+    color: #111827;
 }
 
 .badges {
@@ -244,7 +245,7 @@ header {
     padding: 16px 0;
 }
 
-.wrapper {
+.logotypes .wrapper {
     width: 1216px;
     height: 110px;
     margin: 0 auto;
@@ -257,11 +258,11 @@ header {
     align-items: center;
 }
 
-.wrapper img {
+.logotypes .wrapper img {
     margin-right: 64px;
 }
 
-.wrapper img:last-child {
+.logotypes .wrapper img:last-child {
     margin: 0;
 }
 
@@ -513,12 +514,9 @@ header {
  .inner-logos {
     width: 448px;
     height: 192px;
-
     top: 40px;
     left: 124px;
- }
 
- .inner-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -538,13 +536,17 @@ header {
     width: 1440px;
     height: 558px;
 
+    display: flex;
+    overflow: hidden;
+
     background: #1DB5BE;
  }
 
  .cta-heading {
+    margin-top: 111px;
+    margin-left: 112px;
     width: 592px;
     height: 336px;
-    margin: 111px 0;
  }
 
  .cta-heading h2 {
@@ -561,3 +563,92 @@ header {
     font-weight: 500;
     line-height: 28px;
  }
+
+ .cta-images .first-image {
+    top: -80px;
+    left: 48px;
+ }
+
+ .cta-images .second-image {
+    top: 174px;
+    left: 312px;
+ }
+
+ footer {
+    margin: 0 auto;
+    padding: 64px 122px;
+    box-sizing: border-box;
+    width: 1440px;
+    height: 288px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: #000000;
+ }
+
+ .footer-nav {
+    width: 432px;
+    height: 160px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .links {
+    width: 423px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+ }
+
+ .links a {
+    text-decoration: none;
+ }
+
+ .links li{
+    margin-right: 24px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+ }
+
+ .links a:nth-of-type(2) li {
+    margin-right: 225px;
+ }
+
+ .links a:last-of-type li {
+    margin-right: 0;
+ }
+ 
+ .copyright {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #D1D5DB;
+ }
+
+ .footer-badges {
+    width: 176px;
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ 
+ .footer-badges p {
+    font-weight: 500;
+    line-height: 28px;
+
+    color: #D1D5DB;
+ }
+
