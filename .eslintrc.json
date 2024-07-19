@@ -42,5 +42,8 @@
                 "plugin:@html-eslint/recommended"
             ]
         }
+    ],
+    "ignorePatterns": [
+        "**/*.html"
     ]
 }
