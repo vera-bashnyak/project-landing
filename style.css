@@ -33,6 +33,10 @@ body {
     color: #111827;
 }
  
+.tablet {
+    display: none;
+ }
+ 
 p {
     margin: 0;
 }
@@ -61,6 +65,7 @@ header {
 
 .links a {
     text-decoration: none;
+    color: #FFF;
  }
 
 .menu {
@@ -86,6 +91,7 @@ header {
 
 .badges {
     width: 282px;
+    margin-right: 16px;
     display: flex;
     justify-content: space-between;
 }
@@ -124,6 +130,10 @@ header {
 
 .description {
     line-height: 28px;
+}
+
+.hero .description {
+    color: #374151;
 }
 
 .hero p {
@@ -229,9 +239,8 @@ header {
 }
 
 .logotypes .wrapper {
-    width: 1216px;
-    height: 110px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     border-top: 1px solid #E5E7EB;
     border-bottom: 1px solid #E5E7EB;
     display: flex;
@@ -240,7 +249,6 @@ header {
 }
 
 .testimonial > img {
-    position: absolute;
     top: 64px;
     left: 112px;
     opacity: 0.3;
@@ -254,22 +262,18 @@ header {
     margin-right: 16px;
 }
 
-.achievements-item img {
-    padding: 8px;
- }
-
- .logos > img {
+ .logos > img.desktop {
     left: 78px;
  }
 
  .inner-logos img {
-    margin-right: 64px;
+    margin-right: 64px; 
  }
 
  .inner-logos img:nth-child(4) {
     margin-right: 0;
  }
- 
+
 .logotypes .wrapper img {
     margin-right: 64px;
 }
@@ -279,8 +283,7 @@ header {
 }
 
 .features {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 96px 0;
 }
 
 .features-heading {
@@ -290,11 +293,7 @@ header {
     height: 124px;
 }
 
-.features h2 {
-    margin: 0;
-    margin-bottom: 8px;
-    font-size: 48px;
-    line-height: 60px;
+.features-heading h2 {
     text-align: center;
 }
 
@@ -319,6 +318,10 @@ header {
     align-items: center;
 }
 
+.feature-item div {
+    padding: 0 16px;
+}
+
 .feature-item h3 {
     margin: 0;
     margin-bottom: 8px;
@@ -330,24 +333,27 @@ header {
 .feature-item p {
     font-size: 16px;
     line-height: 24px;
+    color: #374151;
 }
 
 .testimonial {
     margin: 0 auto;
+    padding-top: 120px;
+    padding-left: 216px;
+    box-sizing: border-box;
     width: 1440px;
     height: 892px;
     background: #D5FAFC;
 }
 
 .testimonial-heading {
-    top: 120px;
-    left: 216px;
     width: 488px;
     height: 156px;
 }
 
 .heading h2 {
     margin: 0;
+    margin-bottom: 8px;
     font-size: 48px;
     line-height: 60px;
     letter-spacing: -2.5px;
@@ -407,6 +413,7 @@ header {
  .metrics {
     height: 338px;
     padding: 80px 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -455,17 +462,19 @@ header {
  }
 
  .logo-clouds {
-    height: 431px;
     padding: 80px 0;
-    box-sizing: border-box;
+ }
+
+ .logo-clouds .wrapper {
+    height: 270px;
+    border-top: 1px solid #F3F4F6;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #F3F4F6;
- }
+}
 
  .logo-heading {
     width: 488px;
-    height: 264px;
+    height: 100%;
     padding: 40px 0;
     box-sizing: border-box;
  }
@@ -566,7 +575,6 @@ header {
     row-gap: 12px;
  }
 
- 
  .links li{
     margin-right: 24px;
     font-size: 16px;
@@ -596,3 +604,220 @@ header {
     justify-content: space-between;
  }
 
+@media (width <= 768px) {
+body {
+    background: none;
+    background-image: url('./tablet-images/BG.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.tablet {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+.container {
+    width: 768px;
+    padding: 0 40px;
+}
+
+header {
+    margin: 0;
+}
+
+.main-nav {
+    width: 128px;
+}
+
+.main-nav .menu {
+    display: none;
+}
+
+header .wrapper {
+    width: 338px;
+    display: flex;
+}
+
+header .wrapper button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hero {
+    height: 1160px;
+    margin: 0;
+    display: block;
+}
+
+.content {
+    width: 100%;
+    height: 440px;
+    padding: 80px 0;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.img-mobile {
+    margin: 0 auto;
+}
+
+.left-band-1-tablet {
+    top: 727px;
+    left: 0;
+}
+
+.left-band-2-tablet {
+    top: 833px;
+    left: 0;
+}
+
+.right-band-1-tablet {
+    top: 489px;
+    left: 527px;
+    z-index: -1;
+}
+
+.right-band-2-tablet {
+    top: 565px;
+    left: 441px;
+    z-index: -1;
+}
+
+.right-band-3-tablet {
+    top: 607px;
+    left: 672px;
+}
+
+.logotypes {
+    height: 168px;
+}
+
+.logotypes .wrapper {
+    flex-wrap: wrap;
+}
+
+.features {
+    padding: 80px 0;
+}
+
+.features-heading {
+    width: 688px;
+    height: 109px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.rows {
+    height: 632px;
+}
+
+.feature-item {
+    width: 329px;
+    height: 168px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    line-height: 32px;  
+}
+
+.testimonial {
+    margin: 0;
+    padding: 120px 40px 80px;
+    width: 768px;
+    height: 1165px;
+}
+
+.testimonial > img {
+    left: 20px;
+}
+
+.testimonial-heading {
+    width: 100%;
+    height: 81px;
+    margin-bottom: 40px;
+}
+
+.testimonial-item {
+    position: static;
+    width: 100%;
+    height: 284px;
+    margin-bottom: 24px;
+}
+
+.testimonial-item3 {
+    height: 228px;
+    margin-bottom: 0;
+}
+
+.metrics {
+    height: 457px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.metrics-heading {
+    width: 100%;
+    height: 81px;
+    margin-bottom: 48px;
+}
+
+.metrics-content {
+    width: 100%;
+    height: 168px;
+    row-gap: 40px;
+}
+
+.achievements-item {
+    width: 328px;
+    height: 64px;
+}
+
+.achievements-item div {
+    width: 264px;
+}
+
+.achievements-item .number {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: normal;
+}
+
+.achievements-item .label {
+    font-size: 16px;
+}
+
+.logo-clouds {
+    height: 383px;
+}
+
+.logo-heading {
+    width: 328px;
+    padding: 20px 0;
+}
+
+.logos {
+    width: 328px;
+    height: 164px;
+}
+
+.inner-logos {
+    width: 272px;
+    height: 117px;
+    margin: 24px 28px 23px;
+    row-gap: 39px;
+}
+}
