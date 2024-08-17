@@ -652,6 +652,10 @@ header .wrapper {
     display: flex;
 }
 
+.badges {
+    flex-shrink: 0;
+}
+
 header .wrapper button {
     display: block;
     background-color: transparent;
