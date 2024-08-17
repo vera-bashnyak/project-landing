@@ -100,6 +100,7 @@ header {
     width: 135px;
     height: 40px;
     border: 1px solid gray;
+    box-sizing: border-box;
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
@@ -647,6 +648,7 @@ header {
 
 header .wrapper {
     width: 338px;
+    height: 40px;
     display: flex;
 }
 
