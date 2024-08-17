@@ -463,6 +463,7 @@ header {
 
  .logo-clouds {
     padding: 80px 0;
+    box-sizing: border-box;
  }
 
  .logo-clouds .wrapper {
@@ -507,16 +508,18 @@ header {
 
  .cta {
     margin: 0 auto;
+    padding: 0 112px;
+    box-sizing: border-box;
     width: 1440px;
     height: 558px;
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
     background: #1DB5BE;
  }
 
  .cta-heading {
     margin-top: 111px;
-    margin-left: 112px;
     width: 592px;
     height: 336px;
  }
@@ -535,19 +538,24 @@ header {
     line-height: 28px;
  }
 
+ .cta-images {
+    width: 592px;
+    height: 100%;
+ }
+
  .cta-images .first-image {
-    top: -80px;
-    left: 48px;
+    top: 0;
+    left: 12px;
  }
 
  .cta-images .second-image {
-    top: 174px;
-    left: 312px;
+    left: 276px;
+    bottom: 0;
  }
 
  footer {
     margin: 0 auto;
-    padding: 64px 122px;
+    padding: 64px 112px;
     box-sizing: border-box;
     width: 1440px;
     height: 288px;
@@ -582,11 +590,11 @@ header {
     color: #FFF;
  }
 
- .links a:nth-of-type(2) li {
+ .links li:nth-of-type(2) {
     margin-right: 225px;
  }
 
- .links a:last-of-type li {
+ .links li:last-of-type {
     margin-right: 0;
  }
  
@@ -621,7 +629,7 @@ body {
 }
 
 .container {
-    width: 768px;
+    width: 100%;
     padding: 0 40px;
 }
 
@@ -737,7 +745,7 @@ header .wrapper button {
 .testimonial {
     margin: 0;
     padding: 120px 40px 80px;
-    width: 768px;
+    width: 100%;
     height: 1165px;
 }
 
@@ -804,6 +812,10 @@ header .wrapper button {
     height: 383px;
 }
 
+.logo-clouds .wrapper {
+    height: 222px;
+}
+
 .logo-heading {
     width: 328px;
     padding: 20px 0;
@@ -817,7 +829,56 @@ header .wrapper button {
 .inner-logos {
     width: 272px;
     height: 117px;
-    margin: 24px 28px 23px;
+    top: 24px;
+    left: 28px;
+    justify-content: flex-end;
     row-gap: 39px;
+}
+
+.inner-logos img.tablet {
+    display: inline;
+}
+
+.inner-logos img {
+    margin-right: 37px;
+}
+
+.inner-logos img:nth-child(11) {
+    margin-right: 0;
+}
+
+.cta {
+    width: 100%;
+    height: 919px;
+    margin: 0;
+    padding: 80px 40px 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.cta-heading {
+    margin: 0;
+    margin-bottom: 48px;
+    width: 688px;
+    height: 233px;
+}
+
+.cta-images {
+    width: 100%;
+    height: 558px;
+}
+
+.cta-images .second-image {
+    left: 372px;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 64px 40px;
+}
+
+.footer-badges {
+    width: 135px;
 }
 }
